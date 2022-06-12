@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #ebfc01;
+  max-width: 100%;
+  background-size: cover;
+  height: 100vh;
+  background-color: #70abbe;
+}
+header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+}
+form {
+  text-align: center;
+  max-width: 100%;
+  font-family: arial;
+}
+div.name input {
+  width: 30%;
+  padding: 4px;
+}
+input {
+  padding: 6px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fffffe;
+  display: inline-block;
+}
+img {
+  max-width: 48%;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+.college input {
+  width: 40%;
+}
+label {
+  font-weight: bold;
+}
+section.info {
+  text-align: left;
+  margin-left: 2%;
+  font-size: 25px;
+}
+.address input {
+  width: 80%;
+}
+p {
+  font-weight: bold;
+}
+.gender input[type="radio"] {
+  height: 1.3em;
+  width: 2%;
+}
+section.info input[type="submit"] {
+  padding: 4px 10px;
+  font-weight: bold;
+}
+div.submit {
+  text-align: center;
+}
+section input[type="email"] {
+  width: 35%;
+}
+section input[type="tel"] {
+  width: 20%;
+}
+@media screen and (max-width: 950px) {
+  form {
+    font-size: 8px;
+    margin-left: 2%;
+    font-size: 20px;
+  }
+  input {
+    font-size: 20px;
+    padding: 4px;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 720px) {
+  form {
+    font-size: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  label,
+  p {
+    font-size: 25px;
+  }
+  .gender {
+    font-size: 25px;
+  } 
+}
+@media screen and (max-width:645px) {
+  img {
+    top: 32%;
+  }
+  section input[type="tel"] {
+    width: 30%;
+  }
+  section input[type="email"] {
+    width: 43%;
+  }
+
+}
