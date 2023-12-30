@@ -29,14 +29,14 @@ img {
 /* Utility classes */
 
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     text-align: center;
     margin: 0 auto;
     padding: 0 3rem;
 }
 
 .lead {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .text-primary {
@@ -49,6 +49,10 @@ img {
 
 .text-light {
     color: var(--light-color);
+}
+
+.light-bg {
+    background-color: var(--light-color);
 }
 
 /* Navigation */
@@ -134,6 +138,106 @@ nav.menu ul li a{
     font-size: 1.2rem;
 }
 
+/* Video Section */
+
+#video {
+    color: #103063;
+}
+
+#video h3 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#video a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#video .lead {
+    padding-bottom: 10px;
+}
+
+/* Entertainment Section */
+
+#entertainment {
+    background: url(../images/section-bg.jpg) no-repeat center/cover;
+    padding: 8rem;
+}
+
+#entertainment h2 {
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+}
+
+/* Gift Card */
+
+#gift-card {
+    padding-top: 2.5rem;
+}
+
+.gift-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.gift-cards h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.gift-cards p.text {
+    font-size: 1.1rem;
+    border-bottom: var(--secondary-color) 1px solid;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.gift-cards a.text-secondary {
+    text-decoration: none;
+}
+
+#gift-card {
+    padding: 20px;
+}
+
+/* Footer Section */
+
+.footer-cols {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;
+    text-align: left;
+}
+
+footer ul {
+    list-style-type: none;
+    color: var(--light-color);
+}
+
+footer li a {
+    text-decoration: none;
+    color: #CCCCC2;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    background-color: #333333;
+    padding: 1rem;
+}
+
+.li-head {
+    border-bottom: #444 1px solid;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 3px;
+}
+
 /* Buttons */
 
 .menu-btn {
@@ -168,13 +272,64 @@ nav.menu ul li a{
 
 /* Media Queries */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
     #showcase h2 {
         font-size: 2rem;
     }
 
     .lead {
         font-size: 1.2rem;
+    }
+
+    #entertainment {
+        padding: 6rem 0;
+    }
+
+    #entertainment .lead {
+        font-size: 1rem;
+    }
+
+    #entertainment h2 {
+        font-size: 2rem;
+    }
+
+    #gift-card .lead {
+        font-size: 1rem;
+    }
+
+    .footer-cols {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    #showcase {
+        height: 80vh;
+    }
+
+    #showcase h1{
+        font-size: 3.2rem;
+    }
+
+    #showcase h2 {
+        font-size: 1.8rem;
+    }
+
+    #video .lead {
+        font-size: 1rem;
+    }
+
+    #entertainment {
+        padding: 3rem 0;
+    }
+
+    #entertainment h2 {
+        font-size: 1.8rem;
+    }
+
+    #gift-card .lead {
+        display: none;
     }
 }
 
@@ -185,10 +340,6 @@ nav.menu ul li a{
 
     #showcase h1 {
         font-size: 2.8rem;
-    }
-
-    #showcase h2 {
-        font-size: 1.8rem;
     }
 
     #showcase nav {
@@ -225,5 +376,15 @@ nav.menu ul li a{
 
     .menu-btn:hover {
         opacity: 0.9;
+    }    
+}
+
+@media screen and (max-width: 520px) {
+    .gift-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-cols {
+        grid-template-columns: 1fr;
     }    
 }
