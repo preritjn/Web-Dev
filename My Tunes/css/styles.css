@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color : #b90415;
+    --primary-color-hover : #d3071b;
+    --secondary-color : #103063;
+    --secondary-color-hover : #143f85;
+    --light-color : #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #252529;
+    color: #fff;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+/* Utility classes */
+
+.container {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-light {
+    color: var(--light-color);
+}
+
+/* Navigation */
+
+.menu  {
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    position: fixed;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav.menu ul li {
+    padding: 10px 20px 10px 20px;
+}
+
+nav.menu ul li:hover {
+    background-color: #444;
+}
+
+nav.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Showcase */
+
+#showcase {
+    background: url(../images/showcase.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#showcase h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Music Section */
+
+#music {
+    margin-top: 20px;
+}
+
+#music h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#music h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#music .lead {
+    margin-bottom: 10px;
+}
+
+#music a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#music .text-light {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+
+.menu-btn {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.btn-secondary {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 820px) {
+    #showcase h2 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:580px){
+    #showcase {
+        height: 50vh;
+    }
+
+    #showcase h1 {
+        font-size: 2.8rem;
+    }
+
+    #showcase h2 {
+        font-size: 1.8rem;
+    }
+
+    #showcase nav {
+        width: 40%;
+        height: 100%;
+        transform: translateX(-250px);
+        transition: transform 0.5s ease-in-out;
+        opacity: 0.9;
+    }
+
+    #showcase nav ul {
+        display: block;
+    }
+
+    .menu ul li {
+        border-bottom: #fff 1px solid;
+    }
+
+    #showcase .menu.show {
+        transform: translateX(0px);
+    }
+
+    .hide-on-small {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.9;
+    }    
+}
