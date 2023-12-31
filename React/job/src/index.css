@@ -13,7 +13,135 @@
 }
 
 body {
-    padding: 20px;
+    padding: 20px 40px;
     font-family: "Poppins";
     background: var(--secondary);
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar h2 {
+    margin-right: auto;
+    border-bottom: var(--primary) 3px solid;
+    font-size: 2.5rem;
+}
+
+.navbar nav a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 200ms ease-in-out;
+    border-radius: 4px;
+}
+
+.navbar nav a.active {
+    background: var(--primary);
+}
+
+.home h2,.about h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.home p,.about p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+
+.help-layout {
+    margin: 20px 0;
+}
+
+.help-layout h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.help-layout p {
+    font-size: 1.2rem;
+}
+
+.help-layout nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-layout nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    border: #fff 2px solid;
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+.help-layout nav a.active {
+    background: var(--primary);
+    border: var(--primary) 2px solid;
+}
+
+.help-layout nav a:hover {
+    border: var(--primary) 2px solid;
+}
+
+.faq h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.faq .question {
+    background: rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.faq .question p {
+    padding: 10px 5px;
+}
+
+.contact h3{
+    font-size: 1.5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.contact input,.contact textarea {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.contact form button {
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    background: var(--primary);
+    margin-top: 10px;
+    padding: 6px 12px;
+    margin-left: auto;
+}
+
+.contact form button:hover {
+    opacity: 0.9;;
 }
