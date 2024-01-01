@@ -145,3 +145,50 @@ body {
 .contact form button:hover {
     opacity: 0.9;;
 }
+
+.not-found h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.careers > a {
+    display: block;
+    text-decoration: none;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.careers > a:hover p{
+    color: var(--primary);
+}
+
+.careers > a p:last-child {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.career-details {
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.career-details h2 {
+    padding: 10px 0;
+    font-size: 1.9rem;
+}
+
+.career-details p {
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+ 
