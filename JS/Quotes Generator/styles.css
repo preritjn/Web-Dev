@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(./public/background.jpg) no-repeat center center/cover;
+}
+
+.container {
+    width: 600px;
+}
+
+.header {
+    margin: 20px auto;
+    width: 50%;
+    background-color: rgb(211, 211, 211,0.8);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.main-content {
+    width: 100%;
+    padding: 40px;
+    background-color: rgb(240, 248, 255,0.5);
+    border-radius: 15px;
+}
+
+.quote {
+    height: 100px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#btn {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+#btn:active {
+    transform: scale(0.95);
+}

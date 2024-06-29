@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./public/background.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    width: 55%;
+    border-radius: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question {
+    padding: 18px 0px;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: black 1px solid;
+    position: relative;
+}
+
+.question::after {
+    content: '+';
+    position: absolute;
+    right: 0px;
+}
+
+.answer {
+    padding-top: 15px;
+    width: 100%;
+    font-size: 20px;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.question.active::after {
+    content: '-';
+}
+
+.answer.active{
+    height: 110px;
+}
