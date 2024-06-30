@@ -9,4 +9,74 @@
 body {
     background: url(./public/background.jpg) no-repeat center center/cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 24px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+}
+
+#timer {
+    width: 100%;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#play-btn {
+    background-color: green;
+    font-size: 1.7rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pause-btn {
+    background-color: orange;
+    font-size: 1.7rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-btn {
+    background-color: red;
+    font-size: 1.7rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#play,#pause,#reset {
+    padding: 15px 20px;
+}
+
+.disabled {
+    opacity: 0.6;
+}
+
+#play-btn:active {
+    transform: scale(0.95);
+}
+
+#pause-btn:active {
+    transform: scale(0.95);
+}
+
+#reset-btn:active {
+    transform: scale(0.95);
 }
