@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    background: url(./public/background.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#add-task-container {
+    width: 500px;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    flex: 2;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 5px 10px; 
+}
+
+#add-task-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    background-color: white;
+    border: solid green 2px;
+    color: green;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+#add-task-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+#task-container {
+    height: 600px;
+    width: 500px;
+    margin-top: 20px;    
+    overflow-y: auto;
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4px;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+li {
+    max-width: 380px;
+    overflow-wrap: break-word;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.checkTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: orange solid 1px;
+    color: orange;
+    background-color: white;
+    transition: .3s;
+}
+
+.checkTask:hover {
+    background-color: orange;
+    color: white;
+}
+
+.deleteTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    border: red solid 1px;
+    transition: .3s;
+}
+
+.deleteTask:hover {
+    background-color: red;
+    color: white;
+}
