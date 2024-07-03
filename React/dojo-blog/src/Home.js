@@ -1,7 +1,7 @@
 import BlogList from "./BlogList"
 import useFetch from "./useFetch"
 
-function Home() {
+export default function Home() {
     const {data:blogs,isPending,error} = useFetch('http://localhost:8000/blogs')   
 
     return (  
@@ -12,5 +12,3 @@ function Home() {
         </div>
     )
 }
- 
-export default Home

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 
-function Create() {
+export default function Create() {
     const [title,setTitle] = useState('')
     const [body,setBody] = useState('')
     const [author,setAuthor] = useState('Prerit')
@@ -53,7 +53,5 @@ function Create() {
                 {isPending && <button>Adding...</button>}
             </form>
         </div>
-    );
+    )
 }
- 
-export default Create;

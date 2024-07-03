@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function BlogList({blogs,title}) {
+export default function BlogList({blogs,title}) {
     return (
         <div className="blog-list">
             <h2>{title}</h2>
@@ -19,5 +19,3 @@ function BlogList({blogs,title}) {
         </div>
     );
 }
-
-export default BlogList;

@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react"
 
-function useFetch(url) {
+export default function useFetch(url) {
     const [data, setBlogs] = useState(null)
     const [isPending, setIsPending] = useState(true)
     const [error, setError] = useState(null)
@@ -34,5 +34,3 @@ function useFetch(url) {
 
     return {data, isPending, error}
 }
-
-export default useFetch;
