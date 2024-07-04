@@ -1,7 +1,7 @@
 import { useParams,useNavigate } from "react-router-dom";
 import useFetch from "./useFetch";
 
-function BlogDetails() {
+export default function BlogDetails() {
     const {id} = useParams()
     const {data:blog, isPending, error} = useFetch('http://localhost:8000/blogs/'+id)
     const navigate = useNavigate()
@@ -25,7 +25,5 @@ function BlogDetails() {
                 </article>
             )}
         </div>
-    );
+    )
 }
- 
-export default BlogDetails;
