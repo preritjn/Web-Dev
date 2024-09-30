@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Validator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .upload-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .preview {
+            margin-top: 20px;
+        }
+
+        .preview img {
+            max-width: 50%;
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Your Photo</h2>
+        <input type="file" id="fileInput" accept="image/*" title="Picture">
+        <p id="errorMessage" class="error"></p>
+        <div id="imagePreview" class="preview"></div>
+    </div>
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function() {
+            const file = this.files[0]
+            const maxSizeInMB = 2
+            const maxSizeInBytes = maxSizeInMB * 1024 * 1024             
+            const errorMessageElement = document.getElementById('errorMessage')
+            const imagePreviewElement = document.getElementById('imagePreview')
+
+            if (file) {
+                if (file.size > maxSizeInBytes) {
+                    errorMessageElement.textContent = `File size exceeds ${maxSizeInMB} MB. Please upload a smaller file.`
+                    this.value = ''
+                    imagePreviewElement.innerHTML = ''
+                } 
+                else {
+                    errorMessageElement.textContent = ''
+                    const reader = new FileReader()
+                    reader.onload = (e) => imagePreviewElement.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image">`
+                    reader.readAsDataURL(file)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
