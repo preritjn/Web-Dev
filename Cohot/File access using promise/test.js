@@ -2,7 +2,7 @@ const fs = require("fs")
 
 function test() {
   return new Promise(function (resolve, reject) {
-    fs.readFile("./Test2/styles.css", "utf8", function (err, data) {
+    fs.readFile("./Test2/styles.css", "utf8",(err, data) => {
       resolve(data)
     })
   })

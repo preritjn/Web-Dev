@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Buy eggs",
+        "isCompleted": false,
+        "description": "Go to store and buy eggs"
+    },
+    {
+        "id": 2,
+        "title": "Buy bread",
+        "isCompleted": false,
+        "description": "Go to store and buy bread"
+    },
+    {
+        "id": 3,
+        "title": "Buy butter",
+        "isCompleted": false,
+        "description": "Go to store and buy butter"
+    },
+    {
+        "id": 4,
+        "title": "Buy cheese",
+        "isCompleted": false,
+        "description": "Go to store and buy cheese"
+    },
+    {
+        "id": 5,
+        "title": "Buy Milk",
+        "description": "Go to store and buy milk",
+        "isCompleted": false
+    },
+    {
+        "id": 6,
+        "title": "Hospital",
+        "description": "go to Hospital",
+        "isCompleted": false
+    },
+    {
+        "id": 7,
+        "title": "Friends",
+        "description": "Watch friends series",
+        "isCompleted": false
+    }
+]
