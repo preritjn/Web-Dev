@@ -96,6 +96,10 @@ app.delete('/todos/:id',(req,res) => {
   })
 })
 
+app.all('*',(req,res) => {
+  res.status(404).send('Not Found')
+})
+
 app.listen(port, () => {
   console.log(`listening to the port ${port}`)
 })
