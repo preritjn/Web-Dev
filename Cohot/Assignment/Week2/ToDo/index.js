@@ -100,6 +100,11 @@ app.all('*',(req,res) => {
   res.status(404).send('Not Found')
 })
 
+app.use((err,req,res,next) => {
+  console.error(err.stack)
+  res.status(500).send('Internal Server Error')
+})
+
 app.listen(port, () => {
   console.log(`listening to the port ${port}`)
 })
